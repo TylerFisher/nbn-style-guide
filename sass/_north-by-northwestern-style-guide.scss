@@ -78,6 +78,10 @@ blockquote {
     padding-left: 10px;
 }
 
+h1 a:not(.button), h1 a:not(.button):visited {
+    color: $white;
+}
+
 p {
     font-size: $base-size;
     line-height: $base-size * 1.5
