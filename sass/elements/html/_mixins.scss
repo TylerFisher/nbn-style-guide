@@ -11,8 +11,8 @@ $html-extend:      true !default;
 
 @mixin html-base($font-size: $html-font-size, $line-height: $html-line-height, $extend: $html-extend) {
   @if not ($extend) {
-    font-size: $font-size;
-    line-height: $line-height;
+    font-size: 1em;
+    // line-height: $line-height;
   }
   @else {
     @extend %html-base;
