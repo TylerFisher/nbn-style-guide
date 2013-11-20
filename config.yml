@@ -63,10 +63,10 @@ components:
     - warning
     - error
   button:
-    - Call to Action:
+    - Small:
         classes:
           - call-to-action
-    - Big Button:
+    - Big:
         classes:
           - big-button
     - Warning Button:

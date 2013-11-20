@@ -6,31 +6,15 @@ $white: #fefefe;
 $gray: mix($black, $white);
 $cs-primary: #3B1D62;
 
-//////////////////////////////
-// Color Stacks
-//
-// We can utilize [Color Schemer](https://github.com/scottkellum/color-schemer)
-//   to build us awesome color guides.
-//////////////////////////////
-// Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
-$cs-scheme:             accented-analogic;
-// Options: mono, complement, triad, tetrad, analogic, accented-analogic
-$cs-hue-offset:         42;
-// Options: 0-100;
-$cs-brightness-offset:  10;
-// Options: 0-100;
-$cs-color-model:        ryb;
-// Options: rgb, ryb
-
 $black-tints:      tint-stack($black);
 $primary-tints:    tint-stack(cs-primary());
-$secondary-tints:  tint-stack(cs-secondary());
-$tertiary-tints:   tint-stack(cs-tertiary());
-$quaternary-tints:   tint-stack(cs-quadrary());
+$secondary-tints:  tint-stack(#CD2A2B);
+$tertiary-tints:   tint-stack(#199E8D);
+$quaternary-tints:   tint-stack(#E68C1A);
 $primary-shades:   shade-stack(cs-primary());
-$secondary-shades: shade-stack(cs-secondary());
-$tertiary-shades:  shade-stack(cs-tertiary());
-$quaternary-shades:  shade-stack(cs-quadrary());
+$secondary-shades: shade-stack(#CD2A2B);
+$tertiary-shades:  shade-stack(#199E8D);
+$quaternary-shades:  shade-stack(#E68C1A);
 
 $cs-secondary: cs-secondary();
 
@@ -40,11 +24,11 @@ $cs-link-hover: nth($primary-tints, 3);
 $cs-link-active: nth($primary-tints, 3);
 $cs-link-visited: nth($secondary-tints, 2);
 $cs-link-focus: nth($primary-tints, 3);
-$cs-link-border-normal: nth($quaternary-shades, 2);
-$cs-link-border-hover: nth($quaternary-shades, 3);
-$cs-link-border-active: nth($quaternary-tints, 2);
-$cs-link-border-visited: nth($quaternary-shades, 4);
-$cs-link-border-focus: nth($quaternary-shades, 4);
+$cs-link-border-normal: nth($tertiary-shades, 2);
+$cs-link-border-hover: nth($tertiary-shades, 3);
+$cs-link-border-active: nth($tertiary-tints, 2);
+$cs-link-border-visited: nth($tertiary-shades, 4);
+$cs-link-border-focus: nth($tertiary-shades, 4);
 
 //////////////////////////////
 // Background Colors
@@ -66,15 +50,15 @@ $cs-border: $gray;
 //////////////////////////////
 // Status Colors
 //////////////////////////////
-$cs-status-status: nth($quaternary-tints, 6);
-$cs-status-warning: nth($secondary-tints, 2);
-$cs-status-error: nth($tertiary-shades, 2);
+$cs-status-status: nth($primary-tints, 6);
+$cs-status-warning: nth($quaternary-tints, 2);
+$cs-status-error: nth($secondary-shades, 2);
 
 //////////////////////////////
 // Component defaults
 //////////////////////////////
 // Buttons
-$cs-button-color-default: $gray;
+$cs-button-color-default: nth($primary-shades, 1);
 //////////////////////////////
 // Messages
 $cs-message-text-color-default: nth($secondary-tints, 1);
