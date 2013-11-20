@@ -69,6 +69,10 @@ article {
     max-width: 720px;
 }
 
+article.full-width {
+    max-width: 100%;
+}
+
 blockquote {
     border-left: nth($primary-tints, 1) 5px solid;
     padding-left: 10px;
