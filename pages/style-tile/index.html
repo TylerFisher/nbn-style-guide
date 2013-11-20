@@ -1,0 +1,83 @@
+{
+  "title": "Style Tile"
+}
+---
+
+<article class="text-examples">
+  <div class="headers group">
+    {{#markdown}}
+## Reach for the stars: the students who actually do
+### Subheads if we want them
+
+[This is an example of link text](#)
+  {{/markdown}}
+  </div>
+  <div class="text group">
+    {{#markdown}}
+“If you join NUSTARS you will go into space!”
+
+While Northwestern University Space Technology and Rocketry Society’s activity fair recruitment tactic might not be truthful, the two-year-old accomplished organization does give students the opportunity to explore the growing aerospace field from the ground. NUSTARS comprises approximately 60 students on four teams: rocketry, microgravity, satellite and education.
+
+Students on the rocketry team focus on building rockets and participating in NASA-sponsored rocketry competitions, and the satellite team is considering participating in the CubeSat Launch Initiative, where the team would build a small cube-shaped satellite and compete to send the device into space as part of a larger NASA satellite. The microgravity team focuses on conducting microgravity research, a field dealing with low gravity conditions.
+
+This past April, NUSTARS beat MIT’s record for achieving a height closest to a mile at the University Student Launch Initiative in Huntsville, Ala. According to the rocket's altimeters, NUSTARS’ rocket reached just six feet above the mile mark.
+
+The competition docked extra points for every foot above a mile, giving Alabama A&M University the win, but in terms of proximity to reaching the altitude of one mile, “We broke the record,” last year’s NUSTARS president Dan Abramov said. “The previous record was within 10 feet of a mile, and this was a tremendous accomplishment.”
+
+This victory in Alabama gained NUSTARS some time in the spotlight, but the organization is currently trying to get its feet off the ground. With a fresh executive board and a crop of new freshmen, NUSTARS faces the challenge of retaining general members who are balancing the rigorous Northwestern class load on top of other extracurricular activities.
+
+“There’s not really any sort of space or aerospace program at Northwestern right now, so this is a good outlet for anyone interested in those fields to kind of learn more about it and get experienced and get involved,” said McCormick junior Samantha Stahl, NUSTARS president and co-founder.
+
+Moreover, NUSTARS was affected by both the NASA sequester and the recent government shutdown. NASA funded the competitions the group participated in, and the April competition at which the group beat MIT’s record ended up seeing the axe.
+
+“There are other competitions we can do with our rocketry team that’ll keep us involved. It’s kind of a bummer that NASA is out of commission,” said McCormick sophomore Annalise Sundberg, the vice president of the organization. “But this year the competition is a little more – I would say – intense, and there’s a little more flexibility with what you can do with your rocket."
+
+NUSTARS is much more than just rockets, however.
+
+The microgravity team is exploring scientific territory that could improve the lives of astronauts and ultimately make outer space a more livable place.
+
+“We’re looking at bone growth,” said Stahl, explaining that a major health issue for astronauts returning to Earth is compromised bone density. “We want to figure out what’s causing that so we’ll be able to be in space longer.”
+
+When astronauts spend extended amounts of time in zero gravity conditions, their bones and muscles become weaker due to the lack of constant gravitational force on them. This does not affect their lives in space itself as much as it takes a toll when they arrive back on Earth. Essentially, the longer a human being spends in space where their muscles and bones do not feel this force, the more fragile they are upon return.
+
+According to Weinberg senior Andrew Kozminski, the chief engineer of the microgravity team, a potential solution to the bone density problem could be found through researching the protein actin, which plays a vital role in the signaling pathways of every cell in the human body. NUSTARS’ microgravity team has designed an experiment to propose to NASA’s Microgravity University program concerning the effects of zero gravity on actin. If chosen, the team will travel to Texas to test their hypothesis on the Weightless Wonder, a NASA plane which flies in a parabolic arc to simulate the conditions of microgravity.
+
+If the team makes a significant discovery on the way actin functions within the cell due to these conditions, it might be possible to develop ways to counteract the negative effects of zero gravity. “That’s a huge contribution by Northwestern to space exploration and science,” said Stahl.
+
+The satellite team focuses further in the future and farther in the atmosphere. While this year’s endeavors involve a self-motivated weather balloon project, the ultimate goal of the satellite team is to build a small cube-shaped satellite and enter it in the NASA-sponsored competition CubSats Launch Initiative, something that Stahl potentially sees happening in a few years.
+
+NUSTARS has established an education outreach program to Chicago public elementary and middle schools, and has partnered with campus nonprofit Supplies for Dreams, which is dedicated to providing children in Chicago Public Schools with school supplies.
+
+“We have a proportion of our club dedicated toward developing a curriculum to go out and teach kids, get them excited about rockets and science and engineering,” said Stahl.
+
+While the team might not have sent her into space, Sundberg’s motivations for joining NUSTARS were simple.
+
+“Joining a design team like NUSTARS and getting experience building rockets and building satellites and working on huge documents for NASA, meeting upper classmen engineers and working with graduate engineers – I just want to say that’s probably one of the most important experiences Northwestern has to offer to any engineer.”
+  {{/markdown}}
+  </div>
+  {{> component-group--button}}
+</article>
+
+<article class="graphic-examples">
+  <div class="colors groups">
+    <h4>Possible Colors</h4>
+    <ul>
+      {{#for 0 options.grunt.userConfig.styleTile.colors 1}}
+      <li class="color-{{this}}"></li>
+      {{/for}}
+    </ul>
+  </div>
+  <div class="images group">
+    <h4>Possible Patterns</h4>
+    <ul>
+      {{#each options.grunt.userConfig.styleTile.images}}
+        {{{possible-pattern @index this ../this}}}
+      {{/each}}
+    </ul>
+  </div>
+  <div class="keywords group">
+    {{#each options.grunt.userConfig.styleTile.keywords}}
+    <span class="keyword-{{@index}}">{{this}}</span>
+    {{/each}}
+  </div>
+</article>
