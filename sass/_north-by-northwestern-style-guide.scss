@@ -70,6 +70,8 @@ $experimental-support-for-microsoft    : false !default;
 article {
     margin: 0 auto;
     max-width: 720px;
+    font-size: $base-size;
+    line-height: $base-size * 1.5
 }
 
 article.full-width {
@@ -83,9 +85,4 @@ blockquote {
 
 h1 a:not(.button), h1 a:not(.button):visited {
     color: $white;
-}
-
-p {
-    font-size: $base-size;
-    line-height: $base-size * 1.5
 }
